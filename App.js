@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+// import LinearGradient from 'react-native-linear-gradient';
 import AsyncStorage from '@react-native-community/async-storage';
 
 const App = () => {
@@ -44,7 +44,8 @@ const App = () => {
   };
 
   return (
-    <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.container}>
+    // <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.clockContainer}>
         <Text style={styles.clockText}>{time.toLocaleTimeString()}</Text>
       </View>
@@ -60,7 +61,8 @@ const App = () => {
           </Text>
         ))}
       </View>
-    </LinearGradient>
+      </View>
+    // </LinearGradient>
   );
 };
 

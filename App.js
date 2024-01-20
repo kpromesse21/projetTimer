@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 // import LinearGradient from 'react-native-linear-gradient';
-// import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-community/async-storage';
 // import AsyncStorage from ''
-
+// import AsyncS
 const App = () => {
   const [time, setTime] = useState(new Date());
   const [alerts, setAlerts] = useState([]);
@@ -22,7 +22,8 @@ const App = () => {
   const loadAlerts = async () => {
     try {
       lo
-      const storedAlerts = await AsyncStorage.getItem('@alerts');
+      // const storedAlerts = await AsyncStorage.getItem('@alerts');
+      const storedAlerts = await Asy
       if (storedAlerts) {
         setAlerts(JSON.parse(storedAlerts));
       }
